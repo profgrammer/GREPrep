@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "871156379579",
+    "firebase_url": "https://starmark-d4468.firebaseio.com",
+    "project_id": "starmark-d4468",
+    "storage_bucket": "starmark-d4468.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871156379579:android:1e62add16349d03c",
+        "android_client_info": {
+          "package_name": "com.example.starmark"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "871156379579-fcla9mmr8k00nv9of01jj7gpacot6r0m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDik9evXpmmlGplgtLG7k5pg26w9CjCgps"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
