@@ -8,7 +8,7 @@
 >
 
     <android.support.v7.widget.RecyclerView
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="60dp"
             android:id="@+id/rv_words"
             android:layout_width="match_parent"
             android:layout_height="match_parent" tools:layout_editor_absoluteY="8dp"

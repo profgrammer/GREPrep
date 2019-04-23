@@ -11,8 +11,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
+//import com.google.firebase.database.DatabaseReference
+//import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.firestore.FirebaseFirestore
 import org.json.JSONArray
 import java.io.InputStream
