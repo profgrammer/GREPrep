@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/rl_fragmentContainer"
         tools:context=".HomeScreenActivity">
-    <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv_words"
+    <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottomNav"
+            app:menu="@menu/bottom_menu"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" tools:layout_editor_absoluteY="8dp"
-            tools:layout_editor_absoluteX="8dp"/>
-</LinearLayout>
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:itemIconTint="@color/backgroundcolor"
+            app:itemTextColor="@color/backgroundcolor"
+            android:layout_alignParentBottom="true"
+    />
+</RelativeLayout>

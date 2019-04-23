@@ -39,13 +39,7 @@
 
             />
 
-            <ImageView
-                    android:id="@+id/img_bookmark"
-                    android:layout_width="50dp" android:layout_height="50dp"
-                    android:src="@drawable/ic_import_contacts_black"
-                    android:layout_alignParentRight="true"
-                    android:tag="book"
-            />
+
 
         </RelativeLayout>
 

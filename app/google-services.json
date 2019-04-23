@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "871156379579-oggojp171dufpifjlh625ruocd8jh3mk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.starmark",
+            "certificate_hash": "5ac23b729aa774c44f79fbc5b067c1a7b7d9ff75"
+          }
+        },
+        {
           "client_id": "871156379579-fcla9mmr8k00nv9of01jj7gpacot6r0m.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -25,15 +33,13 @@
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
+          "other_platform_oauth_client": [
+            {
+              "client_id": "871156379579-fcla9mmr8k00nv9of01jj7gpacot6r0m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

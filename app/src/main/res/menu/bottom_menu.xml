@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bottom_allWords"
+          android:title="All Words"
+          android:icon="@drawable/ic_toc_black"
+    />
+
+
+    <item android:id="@+id/bottom_myWords"
+          android:title="My Words"
+          android:icon="@drawable/ic_import_contacts_black"
+    />
+
+
+</menu>

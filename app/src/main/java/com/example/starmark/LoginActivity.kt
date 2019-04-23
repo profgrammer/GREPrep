@@ -5,6 +5,11 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -34,8 +39,22 @@ class LoginActivity : AppCompatActivity() {
 
         FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
             .addOnCompleteListener {
+                var id = ""
                 if(it.isSuccessful){
+                    val ref = FirebaseFirestore.getInstance()
+
+                    ref.collection("users")
+                        .get()
+                        .addOnSuccessListener {result ->
+                            for(document in result){
+                                if(document["email"] == email){
+                                    id = document["id"].toString()
+                                    break
+                                }
+                            }
+                        }
                     val intent = Intent(this, HomeScreenActivity::class.java)
+                    intent.putExtra("userId", id)
                     startActivity(intent)
                 }
             }
